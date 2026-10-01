@@ -1,0 +1,501 @@
+.mentor-dashboard {
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px;
+  background: #f8fafc;
+  box-sizing: border-box;
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.mentor-dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.mentor-dashboard-label {
+  margin: 0 0 7px;
+  color: #6366f1;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.mentor-dashboard-header h1 {
+  margin: 0;
+  color: #111827;
+  font-size: 32px;
+  font-weight: 750;
+}
+
+.mentor-dashboard-subtitle {
+  margin: 8px 0 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.mentor-profile-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #eef2ff;
+  color: #4f46e5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+  font-weight: 700;
+
+  border: 1px solid #e0e7ff;
+}
+
+
+/* ==========================================
+   STATISTICS
+========================================== */
+
+.mentor-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.mentor-stat-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 15px;
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+}
+
+.mentor-stat-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 11px;
+
+  background: #eef2ff;
+  color: #4f46e5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 19px;
+}
+
+.mentor-stat-card span {
+  display: block;
+  color: #6b7280;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.mentor-stat-card strong {
+  color: #111827;
+  font-size: 25px;
+  font-weight: 750;
+}
+
+
+/* ==========================================
+   SECTION
+========================================== */
+
+.mentor-dashboard-section {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 17px;
+
+  padding: 24px;
+  margin-bottom: 24px;
+
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+}
+
+.mentor-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+
+.section-small-label {
+  margin: 0 0 5px;
+  color: #6366f1;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.mentor-section-header h2 {
+  margin: 0;
+  color: #111827;
+  font-size: 20px;
+}
+
+
+/* ==========================================
+   LEAVE LIST
+========================================== */
+
+.mentor-leave-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.mentor-leave-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 17px 0;
+
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.mentor-leave-item:last-child {
+  border-bottom: none;
+}
+
+.leave-intern-info {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.leave-avatar {
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+
+  background: #eef2ff;
+  color: #4f46e5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 700;
+}
+
+.leave-intern-info h3 {
+  margin: 0 0 5px;
+  color: #111827;
+  font-size: 14px;
+}
+
+.leave-intern-info p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 12px;
+}
+
+
+/* ==========================================
+   STATUS
+========================================== */
+
+.leave-status {
+  padding: 6px 12px;
+  border-radius: 20px;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+
+.leave-status.pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.leave-status.approved {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.leave-status.rejected {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+
+/* ==========================================
+   EMPTY STATE
+========================================== */
+
+.mentor-empty-state {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.empty-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 12px;
+
+  border-radius: 50%;
+  background: #f3f4f6;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+}
+
+.mentor-empty-state h3 {
+  margin: 0 0 6px;
+  color: #374151;
+  font-size: 15px;
+}
+
+.mentor-empty-state p {
+  margin: 0;
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+
+/* ==========================================
+   RESPONSIBILITIES
+========================================== */
+
+.mentor-responsibility-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.responsibility-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+
+  padding: 18px;
+
+  background: #f8fafc;
+  border: 1px solid #eef2f7;
+  border-radius: 13px;
+}
+
+.responsibility-icon {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  border-radius: 10px;
+  background: #eef2ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 17px;
+}
+
+.responsibility-card h3 {
+  margin: 1px 0 5px;
+
+  color: #1f2937;
+  font-size: 14px;
+}
+
+.responsibility-card p {
+  margin: 0;
+
+  color: #6b7280;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+
+/* ==========================================
+   LOADING
+========================================== */
+
+.mentor-dashboard-loading {
+  min-height: 70vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #6b7280;
+  font-size: 14px;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1000px) {
+
+  .mentor-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 700px) {
+
+  .mentor-dashboard {
+    padding: 20px;
+  }
+
+  .mentor-dashboard-header {
+    align-items: flex-start;
+  }
+
+  .mentor-dashboard-header h1 {
+    font-size: 26px;
+  }
+
+  .mentor-profile-circle {
+    width: 45px;
+    height: 45px;
+  }
+
+  .mentor-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mentor-responsibility-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mentor-dashboard-section {
+    padding: 18px;
+  }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 450px) {
+
+  .mentor-dashboard {
+    padding: 15px;
+  }
+
+  .mentor-dashboard-header h1 {
+    font-size: 23px;
+  }
+
+  .mentor-dashboard-subtitle {
+    font-size: 12px;
+  }
+
+  .mentor-stat-card {
+    padding: 16px;
+  }
+
+  .mentor-stat-card strong {
+    font-size: 22px;
+  }
+
+  .mentor-leave-item {
+    align-items: flex-start;
+    gap: 12px;
+    flex-direction: column;
+  }
+
+}
+
+
+/* ============================================================
+   LEAVE ACTIONS
+============================================================ */
+
+.leave-right-section {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.leave-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.leave-approve-btn,
+.leave-reject-btn {
+  border: none;
+  padding: 9px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.leave-approve-btn {
+  background: #16a34a;
+  color: white;
+}
+
+.leave-approve-btn:hover {
+  background: #15803d;
+}
+
+.leave-reject-btn {
+  background: #dc2626;
+  color: white;
+}
+
+.leave-reject-btn:hover {
+  background: #b91c1c;
+}
+
+.leave-approve-btn:disabled,
+.leave-reject-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* ============================================================
+   MOBILE
+============================================================ */
+
+@media (max-width: 768px) {
+
+  .leave-right-section {
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .leave-actions {
+    width: 100%;
+  }
+
+  .leave-approve-btn,
+  .leave-reject-btn {
+    flex: 1;
+  }
+}

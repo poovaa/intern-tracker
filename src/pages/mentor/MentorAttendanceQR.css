@@ -1,0 +1,349 @@
+.mentor-qr-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.mentor-qr-header {
+  margin-bottom: 28px;
+}
+
+.qr-page-badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: #eef2ff;
+  color: #4f46e5;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.mentor-qr-header h1 {
+  margin: 10px 0 6px;
+  font-size: 30px;
+  color: #111827;
+}
+
+.mentor-qr-header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 15px;
+}
+
+.mentor-qr-card {
+  max-width: 520px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 10px 35px rgba(15, 23, 42, 0.08);
+}
+
+.mentor-qr-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.mentor-qr-card-header h2 {
+  margin: 0 0 5px;
+  font-size: 20px;
+  color: #111827;
+}
+
+.mentor-qr-card-header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.qr-active-badge {
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: #dcfce7;
+  color: #15803d;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.qr-display-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 28px 0;
+  padding: 25px;
+  background: #f8fafc;
+  border-radius: 16px;
+}
+
+.qr-display-box canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+.qr-mentor-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.qr-info-item {
+  padding: 14px;
+  background: #f8fafc;
+  border-radius: 10px;
+}
+
+.qr-info-item span {
+  display: block;
+  margin-bottom: 5px;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.qr-info-item strong {
+  color: #111827;
+  font-size: 14px;
+}
+
+.qr-instruction {
+  padding: 16px;
+  margin-bottom: 20px;
+  background: #f1f5f9;
+  border-radius: 12px;
+}
+
+.qr-instruction strong {
+  color: #334155;
+  font-size: 14px;
+}
+
+.qr-instruction p {
+  margin: 7px 0 0;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.regenerate-qr-btn {
+  width: 100%;
+  height: 46px;
+  border: none;
+  border-radius: 10px;
+  background: #111827;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.regenerate-qr-btn:hover {
+  opacity: 0.9;
+}
+
+.regenerate-qr-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.mentor-qr-loading {
+  padding: 50px;
+  text-align: center;
+  color: #64748b;
+}
+
+.mentor-qr-error {
+  padding: 14px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: #fef2f2;
+  color: #b91c1c;
+  font-size: 14px;
+}
+
+
+@media (max-width: 600px) {
+
+  .mentor-qr-page {
+    padding: 15px;
+  }
+
+  .mentor-qr-header h1 {
+    font-size: 24px;
+  }
+
+  .mentor-qr-card {
+    padding: 20px;
+  }
+
+  .qr-display-box {
+    padding: 18px;
+  }
+
+  .qr-mentor-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ==========================================================
+   HEADER ACTIONS
+   ========================================================== */
+
+.mentor-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+
+/* ==========================================================
+   ATTENDANCE QR BUTTON
+   ========================================================== */
+
+.mentor-action-btn {
+  border: none;
+  padding: 11px 16px;
+  border-radius: 10px;
+  background: #111827;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mentor-action-btn:hover {
+  background: #1f2937;
+  transform: translateY(-1px);
+}
+
+.mentor-action-btn:active {
+  transform: translateY(0);
+}
+
+
+/* ==========================================================
+   MOBILE
+   ========================================================== */
+
+@media (max-width: 768px) {
+
+  .mentor-dashboard-header {
+    align-items: flex-start;
+  }
+
+  .mentor-header-actions {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+
+  .mentor-action-btn {
+    font-size: 12px;
+    padding: 9px 12px;
+  }
+
+}
+
+
+/* ==================================================
+   BACK TO DASHBOARD BUTTON
+================================================== */
+
+.qr-back-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #374151;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  padding: 10px 16px;
+  margin-bottom: 24px;
+
+  border-radius: 8px;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+/* Laptop / Desktop */
+
+.qr-back-btn:hover {
+  background: #f9fafb;
+  color: #111827;
+  border-color: #9ca3af;
+  transform: translateY(-1px);
+}
+
+
+.qr-back-btn:active {
+  transform: translateY(0);
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 1024px) {
+
+  .qr-back-btn {
+    font-size: 14px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+  }
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 768px) {
+
+  .qr-back-btn {
+    width: 100%;
+    justify-content: flex-start;
+
+    font-size: 14px;
+
+    padding: 11px 14px;
+
+    margin-bottom: 18px;
+
+    border-radius: 8px;
+  }
+
+}
+
+
+/* ==================================================
+   SMALL MOBILE
+================================================== */
+
+@media (max-width: 480px) {
+
+  .qr-back-btn {
+    font-size: 13px;
+    padding: 10px 12px;
+    margin-bottom: 16px;
+  }
+
+}

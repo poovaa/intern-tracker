@@ -1,0 +1,208 @@
+/* ==========================================================
+   Leave Screen — Clean Modern SaaS UI
+========================================================== */
+
+.leave-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 1.75rem;
+  align-items: start;
+}
+
+/* Card Wrapper */
+.leave-panel-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-xl);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.panel-heading-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.875rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.panel-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.panel-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--primary-700);
+  background: var(--primary-50);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+}
+
+/* Form */
+.leave-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.form-label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.dates-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.leave-submit-button {
+  height: 46px;
+  background: var(--primary-600);
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.25);
+  transition: all 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.leave-submit-button:hover:not(:disabled) {
+  background: var(--primary-700);
+  transform: translateY(-1px);
+}
+
+/* Leave Requests List */
+.requests-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.request-card-item {
+  background: var(--slate-50);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: border-color 0.15s ease;
+}
+
+.request-card-item:hover {
+  border-color: var(--slate-300);
+}
+
+.request-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.request-type-title {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.request-date-range {
+  font-size: 0.8125rem;
+  color: var(--slate-500);
+  font-weight: 500;
+  margin-top: 0.125rem;
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.request-reason-text {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  background: #ffffff;
+  padding: 0.75rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-light);
+}
+
+.admin-remark-callout {
+  font-size: 0.8125rem;
+  color: var(--slate-700);
+  background: #ffffff;
+  padding: 0.625rem 0.75rem;
+  border-left: 3px solid var(--primary-500);
+  border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
+}
+
+/* Status Badges */
+.leave-status-tag {
+  display: inline-block;
+  padding: 0.25rem 0.625rem;
+  border-radius: var(--radius-full);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.leave-status-tag.pending {
+  background: var(--warning-bg);
+  color: var(--warning-text);
+}
+
+.leave-status-tag.approved {
+  background: var(--success-bg);
+  color: var(--success-text);
+}
+
+.leave-status-tag.rejected {
+  background: var(--danger-bg);
+  color: var(--danger-text);
+}
+
+/* Empty State */
+.empty-leave-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--text-secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .leave-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .dates-two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .leave-panel-card {
+    padding: 1.25rem;
+  }
+}
