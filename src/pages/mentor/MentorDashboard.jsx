@@ -264,7 +264,7 @@ const handleViewInterns = () => {
           <div>
 
             <span>
-              Total Interns
+              Total Applicant
             </span>
 
             <strong>
@@ -533,7 +533,7 @@ const handleViewInterns = () => {
             </h3>
 
             <p>
-              Leave requests from your interns
+              Leave requests from your Applicant
               will appear here.
             </p>
 
