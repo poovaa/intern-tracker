@@ -224,7 +224,7 @@ function MentorInterns() {
           </p>
 
           <h1>
-            My Interns
+            My Applicant
           </h1>
 
           <p>
