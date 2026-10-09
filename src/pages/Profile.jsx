@@ -104,7 +104,7 @@ function Profile() {
 
           <h2 className="profile-name">{getFullName()}</h2>
           <p className="profile-role-tag">
-            {user.role || "Intern"} • {user.department || "Engineering"}
+            {user.role || "Applicant"}
           </p>
 
           <span className="profile-status-pill">
