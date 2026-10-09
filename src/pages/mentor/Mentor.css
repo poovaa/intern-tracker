@@ -277,3 +277,99 @@
 @media (prefers-reduced-motion: reduce) {
   .task-modal, .task-modal * { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
 }
+
+
+
+
+
+
+
+
+/* =========================================
+   APPLICANT CARDS — PROPER ALIGNMENT
+   ========================================= */
+
+.interns-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+  align-items: stretch;
+  grid-auto-flow: row;
+}
+
+.intern-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  align-self: stretch;
+  box-sizing: border-box;
+}
+
+.intern-profile,
+.intern-identity,
+.intern-summary,
+.intern-tasks-section,
+.completed-tasks-section {
+  min-width: 0;
+}
+
+.intern-identity {
+  flex: 1;
+  overflow: hidden;
+}
+
+.intern-identity h2,
+.intern-identity p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.intern-card > .assign-task-btn {
+  width: 100%;
+  margin-top: auto;
+  flex-shrink: 0;
+}
+
+/* Laptop */
+@media (max-width: 1200px) {
+  .interns-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .interns-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .intern-card {
+    height: auto;
+  }
+
+  .intern-card > .assign-task-btn {
+    margin-top: 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .interns-grid {
+    gap: 16px;
+  }
+
+  .intern-profile {
+    gap: 10px;
+  }
+
+  .intern-card > .assign-task-btn {
+    min-height: 44px;
+  }
+}
+
